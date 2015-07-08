@@ -1,0 +1,7 @@
+mfcalc.cmi :
+lexer.cmo : mfcalc.cmi
+lexer.cmx : mfcalc.cmx
+main.cmo : mfcalc.cmi lexer.cmo
+main.cmx : mfcalc.cmx lexer.cmx
+mfcalc.cmo : mfcalc.cmi
+mfcalc.cmx : mfcalc.cmi

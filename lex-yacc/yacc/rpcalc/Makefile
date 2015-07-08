@@ -1,0 +1,14 @@
+all:
+	ocamlyacc rpcalc.mly
+	ocamlc -c rpcalc.mli
+	ocamllex lexer.mll
+	ocamlc -c lexer.ml
+	ocamlc -c rpcalc.ml
+	ocamlc -c main.ml
+	ocamlc -o rpcalc lexer.cmo rpcalc.cmo main.cmo
+
+repl:
+	./rpcalc
+
+test:
+	./rpcalc test.rp

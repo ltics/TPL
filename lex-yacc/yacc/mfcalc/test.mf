@@ -1,0 +1,6 @@
+pi
+sin(pi/2)
+alpha = beta1 = 2.3
+alpha
+log(alpha)
+exp(log(beta1))
