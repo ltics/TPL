@@ -8,7 +8,7 @@ sealed trait Term
 
 case object TmTrue extends Term
 case object TmFalse extends Term
-case class TmIf(cond: Term, consequent: Term, alternative: Term) extends
+case class TmIf(cond: Term, consequent: Term, alternative: Term) extends Term
 case object TmZero extends Term
 case class TmSucc(t: Term) extends Term
 case class TmPred(t: Term) extends Term
