@@ -8,6 +8,6 @@ import arith.ArithParser.parse
  */
 class ParserSpec extends FlatSpec with Matchers {
     it should "parse input" in {
-        List(Eval(TmSucc(TmSucc(TmSucc(TmSucc(TmSucc(TmSucc(TmSucc(TmSucc(TmZero))))))))))
+        parse("succ 7;") should be (List(Eval(TmSucc(TmSucc(TmSucc(TmSucc(TmSucc(TmSucc(TmSucc(TmSucc(TmZero)))))))))))
     }
 }
