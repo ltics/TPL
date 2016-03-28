@@ -2,9 +2,9 @@ grammar arith;
 
 file: top? EOF;
 
-top:  term SEMI?
-    | term SEMI top
-    ;
+top: term SEMI?
+   | term SEMI top
+   ;
 
 term: atom
     | LPAREN term RPAREN
