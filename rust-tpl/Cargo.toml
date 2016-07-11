@@ -1,0 +1,6 @@
+[package]
+name = "rust-tpl"
+version = "0.1.0"
+authors = ["zjhsdtc <zjhsdtc@gmail.com>"]
+
+[dependencies]
